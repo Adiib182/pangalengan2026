@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gathering Kantor Batch 2 ✨</title>
+  <title>GPS Batch 2: Pangalengan Escape ✨ — Kloter Paling Pecah!</title>
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -42,6 +42,7 @@
       z-index: 10;
     }
 
+    /* Animasi Teks Berjalan */
     @keyframes marquee {
       0% { transform: translateX(0%); }
       100% { transform: translateX(-50%); }
@@ -49,55 +50,86 @@
     .animate-marquee {
       display: flex;
       width: max-content;
-      animation: marquee 25s linear infinite;
+      animation: marquee 28s linear infinite;
+    }
+
+    /* Animasi Piringan Hitam Musik */
+    @keyframes spin-slow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .spin-vinyl {
+      animation: spin-slow 6s linear infinite;
     }
 
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
   </style>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen overflow-x-hidden selection:bg-amber-400 selection:text-slate-950">
+<body class="bg-slate-950 text-slate-100 min-h-screen overflow-x-hidden selection:bg-emerald-400 selection:text-slate-950">
 
-  <!-- Background Glow -->
+  <!-- Background Glow Nuansa Pangalengan (Emerald Pine & Warm Amber) -->
   <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
-    <div class="absolute -top-40 -left-40 w-96 h-96 bg-amber-500/20 rounded-full blur-3xl"></div>
-    <div class="absolute top-1/3 -right-40 w-96 h-96 bg-rose-500/15 rounded-full blur-3xl"></div>
-    <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl"></div>
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl"></div>
+    <div class="absolute top-1/3 -right-40 w-96 h-96 bg-amber-500/15 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-teal-500/20 rounded-full blur-3xl"></div>
   </div>
 
   <!-- Running Text Atas -->
-  <div class="bg-amber-400 text-slate-950 py-1.5 overflow-hidden border-b border-amber-500 font-extrabold text-xs tracking-wider uppercase">
+  <div class="bg-gradient-to-r from-emerald-400 via-amber-300 to-emerald-400 text-slate-950 py-1.5 overflow-hidden border-b border-emerald-500 font-extrabold text-xs tracking-wider uppercase">
     <div class="animate-marquee">
-      <span class="mx-4">🎉 GATHERING KANTOR BATCH 2 (FOTO & VIDEO)</span>•
-      <span class="mx-4">🔀 URUTAN OTOMATIS DIACAK SETIAP BUKA WEB!</span>•
-      <span class="mx-4">🎬 KLIK VIDEO UNTUK LANGSUNG NONTON</span>•
-      <span class="mx-4">🎲 COBA TOMBOL GACHA MOMEN RANDOM</span>•
-      <span class="mx-4">🎉 GATHERING KANTOR BATCH 2 (FOTO & VIDEO)</span>•
-      <span class="mx-4">🔀 URUTAN OTOMATIS DIACAK SETIAP BUKA WEB!</span>•
+      <span class="mx-4">🌲 GREEN PRAMUKA SQUARE • GATHERING BATCH #2</span>•
+      <span class="mx-4">🏔️ PANGALENGAN DINGIN TAPI BATCH 2 BIKIN MENYALA 🔥</span>•
+      <span class="mx-4">🚫 LUPAKAN KERJAAN MALL SEJENAK, SAATNYA HEALING!</span>•
+      <span class="mx-4">🏆 BUKTI NYATA KLOTER PALING KOMPAK & PECAH</span>•
+      <span class="mx-4">🎲 KLIK TOMBOL "GACHA MOMEN" BUAT LIHAT KEJUTAN!</span>•
+      <span class="mx-4">🌲 GREEN PRAMUKA SQUARE • GATHERING BATCH #2</span>•
+      <span class="mx-4">🏔️ PANGALENGAN DINGIN TAPI BATCH 2 BIKIN MENYALA 🔥</span>•
+      <span class="mx-4">🚫 LUPAKAN KERJAAN MALL SEJENAK, SAATNYA HEALING!</span>•
     </div>
   </div>
 
-  <!-- Header -->
+  <!-- Header & Hero Section -->
   <header class="max-w-7xl mx-auto px-6 pt-10 pb-6 text-center">
-    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold bg-white/10 border border-white/15 text-amber-300 mb-4 backdrop-blur-md">
-      <span>📸 5 Folder Drive • Auto-Sorted & Smart Caption</span>
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold bg-emerald-500/15 border border-emerald-400/30 text-emerald-300 mb-4 backdrop-blur-md shadow-lg">
+      <span>🌲 Green Pramuka Square • Official Recap Batch #2</span>
     </div>
     
-    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-amber-200 via-white to-rose-200 bg-clip-text text-transparent mb-3">
-      Galeri Gathering Kita ✨
+    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-emerald-200 via-white to-amber-200 bg-clip-text text-transparent mb-3">
+      Pangalengan Escape: Batch 2 ✨
     </h1>
-    <p class="text-slate-400 max-w-2xl mx-auto text-sm md:text-base">
-      Semua foto & video keseruan kita langsung tumpah ruah di sini. Setiap kali kamu buka halaman ini, urutannya diacak otomatis biar selalu nemu momen baru!
+    <p class="text-slate-300 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+      Katanya kloter kedua selalu lebih pecah! Dari dinginnya kabut Pangalengan, serunya basah-basahan & outbound, sampai ketawa lepas bareng keluarga besar <span class="text-emerald-300 font-semibold">Green Pramuka Square</span>.
     </p>
 
+    <!-- Fun Trip Stats Khas Pangalengan -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto mt-7">
+      <div class="bg-white/5 border border-white/10 rounded-2xl p-3 backdrop-blur-md">
+        <p class="text-2xl font-extrabold text-amber-400" id="statTotalMedia">8</p>
+        <p class="text-[11px] text-slate-400">Foto & Video Tersimpan</p>
+      </div>
+      <div class="bg-white/5 border border-white/10 rounded-2xl p-3 backdrop-blur-md">
+        <p class="text-2xl font-extrabold text-cyan-300">15°C 🥶</p>
+        <p class="text-[11px] text-slate-400">Dinginnya Pangalengan</p>
+      </div>
+      <div class="bg-white/5 border border-white/10 rounded-2xl p-3 backdrop-blur-md">
+        <p class="text-2xl font-extrabold text-rose-400">0%</p>
+        <p class="text-[11px] text-slate-400">Ingat Kerjaan & Deadline</p>
+      </div>
+      <div class="bg-white/5 border border-white/10 rounded-2xl p-3 backdrop-blur-md">
+        <p class="text-2xl font-extrabold text-emerald-400" id="statTotalReaksi">68</p>
+        <p class="text-[11px] text-slate-400">Total Reaksi Teman2</p>
+      </div>
+    </div>
+
     <!-- Tombol Interaktif Utama -->
-    <div class="flex flex-wrap items-center justify-center gap-2.5 mt-6">
-      <button onclick="shuffleGallery()" class="px-5 py-2.5 rounded-2xl text-xs md:text-sm font-bold bg-gradient-to-r from-amber-400 to-orange-500 text-slate-950 hover:scale-105 active:scale-95 transition shadow-lg shadow-amber-500/20 flex items-center gap-2">
-        <span>🔀 Acak Ulang Galeri</span>
+    <div class="flex flex-wrap items-center justify-center gap-2.5 mt-7">
+      <button onclick="gachaRandomMedia()" class="px-5 py-2.5 rounded-2xl text-xs md:text-sm font-extrabold bg-gradient-to-r from-amber-400 to-orange-500 text-slate-950 hover:scale-105 active:scale-95 transition shadow-lg shadow-amber-500/25 flex items-center gap-2">
+        <span>🎲 Gacha Momen Batch 2!</span>
       </button>
 
-      <button onclick="gachaRandomMedia()" class="px-5 py-2.5 rounded-2xl text-xs md:text-sm font-bold bg-indigo-600 hover:bg-indigo-500 text-white hover:scale-105 transition shadow-lg shadow-indigo-600/25 flex items-center gap-2">
-        <span>🎲 Gacha 1 Momen Kejutan!</span>
+      <button onclick="shuffleGallery()" class="px-5 py-2.5 rounded-2xl text-xs md:text-sm font-bold bg-emerald-600 hover:bg-emerald-500 text-white hover:scale-105 transition shadow-lg shadow-emerald-600/25 flex items-center gap-2">
+        <span>🔀 Acak Ulang Urutan</span>
       </button>
 
       <button onclick="toggleScrapbookMode()" class="px-4 py-2.5 rounded-2xl text-xs md:text-sm font-semibold bg-white/10 hover:bg-white/15 border border-white/15 text-slate-200 transition flex items-center gap-2">
@@ -111,13 +143,13 @@
       </button>
     </div>
 
-    <!-- Filter Tipe Media (Semua / Foto / Video) & Filter 5 Folder -->
+    <!-- Filter Tipe Media & Filter 5 Folder -->
     <div class="mt-6 flex flex-col gap-3 bg-white/5 border border-white/10 p-3.5 rounded-2xl backdrop-blur-xl max-w-5xl mx-auto">
-      
       <div class="flex flex-col md:flex-row items-center justify-between gap-3">
+        
         <!-- Filter Jenis File -->
         <div class="flex items-center gap-1.5 bg-slate-900/90 p-1 rounded-xl border border-white/10 w-full md:w-auto justify-center">
-          <button onclick="setMediaType('ALL')" id="type-ALL" class="type-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-amber-400 text-slate-950 transition">
+          <button onclick="setMediaType('ALL')" id="type-ALL" class="type-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-emerald-400 text-slate-950 transition">
             🌟 Semua (<span id="countAll">0</span>)
           </button>
           <button onclick="setMediaType('image')" id="type-image" class="type-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white transition">
@@ -131,7 +163,6 @@
         <!-- Daftar 5 Folder Otomatis -->
         <div id="categoryContainer" class="flex items-center gap-2 overflow-x-auto w-full md:w-auto py-1 no-scrollbar"></div>
       </div>
-
     </div>
   </header>
 
@@ -148,26 +179,26 @@
     <!-- Grid Foto & Video -->
     <div id="gallery" class="masonry-grid hidden"></div>
 
-    <!-- Tombol Load More (Supaya ratusan foto tetap ringan di HP) -->
+    <!-- Tombol Load More -->
     <div id="loadMoreContainer" class="hidden text-center mt-10">
-      <button onclick="loadMoreItems()" class="px-8 py-3.5 rounded-2xl font-bold text-sm bg-white/10 hover:bg-amber-400 hover:text-slate-950 border border-white/15 text-white transition shadow-xl">
-        👇 Tampilkan Lebih Banyak Momen (<span id="remainingCount">0</span> lagi)
+      <button onclick="loadMoreItems()" class="px-8 py-3.5 rounded-2xl font-bold text-sm bg-white/10 hover:bg-emerald-400 hover:text-slate-950 border border-white/15 text-white transition shadow-xl">
+        👇 Tampilkan Lebih Banyak Kenangan (<span id="remainingCount">0</span> lagi)
       </button>
     </div>
 
     <!-- Pesan Kosong -->
     <div id="emptyState" class="hidden text-center py-20 text-slate-400">
-      Tidak ada foto/video di kategori ini 😅
+      Belum ada foto/video di kategori ini 😅
     </div>
   </main>
 
-  <!-- Lightbox Modal (Bisa Zoom Foto & Putar Video Langsung!) -->
+  <!-- Lightbox Modal (Zoom Foto + Video Player + Reaksi) -->
   <div id="lightbox" onclick="if(event.target === this) closeLightbox()" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-lg hidden flex-col items-center justify-center p-4">
     
     <!-- Top Bar -->
     <div class="absolute top-5 left-6 right-6 flex items-center justify-between z-20">
-      <div id="lightboxBadge" class="px-3 py-1 rounded-full text-xs font-bold bg-amber-400 text-slate-950 hidden">
-        🎲 HASIL GACHA RANDOM!
+      <div id="lightboxBadge" class="px-3 py-1 rounded-full text-xs font-extrabold bg-amber-400 text-slate-950 hidden">
+        🎲 HASIL GACHA BATCH 2!
       </div>
       <button onclick="closeLightbox()" class="ml-auto w-10 h-10 rounded-full bg-white/10 hover:bg-white/25 flex items-center justify-center text-white text-lg transition">
         ✕
@@ -183,24 +214,51 @@
     </button>
     
     <!-- Wadah Media (Foto / Video Player) -->
-    <div id="lightboxMediaContainer" class="w-full max-w-4xl flex items-center justify-center mb-4">
-      <!-- Akan diisi otomatis oleh Foto atau Video Player -->
-    </div>
+    <div id="lightboxMediaContainer" class="w-full max-w-4xl flex items-center justify-center mb-3"></div>
     
     <!-- Caption & Reaksi di Bawah -->
     <div class="text-center max-w-lg z-20">
-      <span id="lightboxCat" class="text-[11px] font-bold uppercase tracking-wider text-amber-300 bg-amber-500/20 px-3 py-1 rounded-full"></span>
+      <span id="lightboxCat" class="text-[11px] font-bold uppercase tracking-wider text-emerald-300 bg-emerald-500/20 px-3 py-1 rounded-full"></span>
       <h3 id="lightboxTitle" class="text-lg md:text-2xl font-bold text-white mt-2"></h3>
       
+      <!-- Tombol Reaksi di Dalam Popup -->
+      <div class="flex items-center justify-center gap-2.5 mt-3">
+        <button onclick="reactCurrentMedia('laugh')" class="px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-amber-500/30 border border-white/15 text-xs md:text-sm transition flex items-center gap-1.5">
+          <span>🤣 Ngakak</span> <span id="lbReactLaugh" class="font-bold text-amber-300">0</span>
+        </button>
+        <button onclick="reactCurrentMedia('fire')" class="px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-rose-500/30 border border-white/15 text-xs md:text-sm transition flex items-center gap-1.5">
+          <span>🔥 Pecah!</span> <span id="lbReactFire" class="font-bold text-rose-300">0</span>
+        </button>
+        <button onclick="reactCurrentMedia('love')" class="px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-pink-500/30 border border-white/15 text-xs md:text-sm transition flex items-center gap-1.5">
+          <span>❤️ Kangen</span> <span id="lbReactLove" class="font-bold text-pink-300">0</span>
+        </button>
+      </div>
+
       <div class="mt-4 flex items-center justify-center gap-3">
-        <button onclick="gachaRandomMedia()" class="px-4 py-2 rounded-full text-xs font-bold bg-amber-400 hover:bg-amber-300 text-slate-950 transition">
+        <button onclick="gachaRandomMedia()" class="px-4 py-2 rounded-full text-xs font-extrabold bg-amber-400 hover:bg-amber-300 text-slate-950 transition">
           🎲 Gacha Lagi
         </button>
         <a id="lightboxLink" href="#" target="_blank" class="px-4 py-2 rounded-full text-xs font-semibold bg-white/10 hover:bg-white/20 text-white transition">
-          Buka File Asli di Drive ↗
+          Download / Buka di Drive ↗
         </a>
       </div>
     </div>
+  </div>
+
+  <!-- Floating Vinyl Music Player (Pojok Kanan Bawah) -->
+  <div class="fixed bottom-5 right-5 z-40">
+    <audio id="bgMusic" loop preload="none">
+      <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3" type="audio/mpeg">
+    </audio>
+    <button onclick="toggleMusic()" class="flex items-center gap-3 bg-slate-900/90 hover:bg-slate-800 border border-white/15 p-2 pr-4 rounded-full shadow-2xl backdrop-blur-xl transition">
+      <div id="vinylDisc" class="w-10 h-10 rounded-full bg-gradient-to-tr from-slate-800 via-slate-950 to-slate-700 border-2 border-emerald-400 flex items-center justify-center shadow-inner">
+        <div class="w-3 h-3 rounded-full bg-emerald-400"></div>
+      </div>
+      <div class="text-left">
+        <p id="musicStatusText" class="text-xs font-bold text-white">Putar Backsound 🎵</p>
+        <p class="text-[10px] text-emerald-300">Vibes Pangalengan</p>
+      </div>
+    </button>
   </div>
 
   <script>
@@ -210,41 +268,37 @@
     const GAS_API_URL = 'https://script.google.com/macros/s/AKfycbxAjxoOmAgGAepW4QMPHLTRdMKvL3qx0F_h9AjrKQ5eSESOTwXJQYF-mOLlfFJU_04JSw/exec';
 
     // ===============================================================
-    // DAFTAR AUTO-CAPTION PINTAR (Pengganti nama file IMG_xxx / VID_xxx)
+    // AUTO-CAPTION KHUSUS GATHERING GPS BATCH 2 KE PANGALENGAN
     // ===============================================================
     const SMART_CAPTIONS_PHOTO = [
-      "Momen tak terlupakan bareng tim! ✨",
-      " lupakan kerjaan sejenak, full senyum! 😎",
-      "Satu frekuensi, satu keseruan 🔥",
-      "Definisi bahagia itu sederhana 🙌",
-      "Awas ada yang ke-gap kamera! 👀📸",
-      "Energi positif satu kantor kumpul semua ⚡",
-      "Kenangan manis yang bakal dirindukan 💛",
-      "ketawa lepas tanpa beban deadline 🤣",
-      "Tim paling solid sedunia! 🏆",
-      "Sesi foto wajib sebelum lanjut seru-seruan ✌️",
-      "Vibes liburannya berasa banget! 🌴",
-      "Candid terbaik sepanjang acara 🌟"
+      "Udara Pangalengan dingin, tapi Batch 2 tetap menyala! 🔥🥶",
+      "Lupakan urusan mall sejenak, waktunya full senyum! 😎🌲",
+      "Pasukan Green Pramuka Square Batch 2 paling solid! 🏆",
+      "Awas ada yang ke-gap kamera pas lagi bengong! 👀📸",
+      "Definisi healing terbaik bareng teman-teman kantor ✨",
+      "Batch 2 emang gak ada lawan kalau soal heboh! 🙌",
+      "Kabut Pangalengan jadi saksi kekompakan kita 🌫️💛",
+      "Ketawa lepas tanpa beban kerjaan, mantap jiwa! 🤣",
+      "Sesi foto wajib biar Batch 1 pada iri! ✌️😆",
+      "Jaket boleh tebal, semangat tetap membara! 🧥🔥",
+      "Kenangan manis keluarga besar GPS di Pangalengan 🍃",
+      "Candid terbaik sepanjang trip Pangalengan! 🌟"
     ];
 
     const SMART_CAPTIONS_VIDEO = [
-      "🎬 Tonton deh, pecah banget suasananya! 🔥",
-      "🎬 Rekaman bukti keseruan kita yang gak ada obat 🤣",
-      "🎬 Putar videonya biar berasa balik ke hari itu! ✨",
-      "🎬 Momen paling heboh yang berhasil terekam kamera 🎥",
-      "🎬 Aksi tak terduga pas acara berlangsung! 😂"
+      "🎬 Tonton deh, bukti Batch 2 paling pecah di Pangalengan! 🔥",
+      "🎬 Rekaman keseruan kita yang gak ada obatnya 🤣🎥",
+      "🎬 Putar videonya biar berasa balik ke dinginnya Pangalengan! 🌲✨",
+      "🎬 Momen paling heboh tim GPS yang terekam kamera! 😂",
+      "🎬 Aksi tak terduga pas lagi seru-seruan bareng! 🙌"
     ];
 
-    // Fungsi Pintar: Deteksi apakah nama file masih bawaan HP/Kamera (IMG_, VID_, DSC, WA, Angka)
     function generateSmartCaption(item, index) {
       const raw = (item.rawTitle || '').trim();
-      
-      // Pola nama file mentahan kamera/HP/WhatsApp yang jelek kalau ditampilkan
       const isUglyCameraFilename = /^(IMG|VID|DSC|PXL|MOV|MVI|DJI|GOPR|Screenshot|WhatsApp|WA0|202\d|1\d{3}|[0-9_\-\s\(\)]+)$/i.test(raw) 
                                    || /^(IMG|VID|DSC|PXL|MOV|MVI|DJI|WhatsApp)[\s_\-0-9]/i.test(raw);
 
       if (!raw || isUglyCameraFilename) {
-        // Pilih auto-caption secara konsisten berdasarkan ID file
         let hash = 0;
         for (let i = 0; i < item.id.length; i++) {
           hash = item.id.charCodeAt(i) + ((hash << 5) - hash);
@@ -252,59 +306,57 @@
         const pool = item.type === 'video' ? SMART_CAPTIONS_VIDEO : SMART_CAPTIONS_PHOTO;
         return pool[Math.abs(hash + index) % pool.length];
       }
-      // Kalau nama filenya memang sudah diketik bagus, tampilkan apa adanya
       return raw;
     }
 
-    // Data Contoh (Simulasi 5 Folder Acak berisi Foto & Video dengan Nama File Kamera Mentahan)
+    // Data Foto & Video Contoh (Preview Sebelum Dihubungkan ke GAS)
     const DUMMY_MEDIA = [
       {
-        id: 'm1', type: 'image', rawTitle: 'IMG_20261010_073012', category: 'Folder 1 - Keberangkatan',
+        id: 'gps1', type: 'image', rawTitle: 'IMG_20261010_073012', category: 'Folder 1 - Otw Pangalengan',
         thumbUrl: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&h=600&q=80',
         fullUrl: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1400&q=80',
         driveUrl: '#'
       },
       {
-        id: 'm2', type: 'video', rawTitle: 'VID-20261010-WA0018', category: 'Folder 2 - Outbound Seru',
-        thumbUrl: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&h=1000&q=80',
-        // Contoh video MP4 bebas hak cipta untuk tes langsung di Preview
+        id: 'gps2', type: 'video', rawTitle: 'VID-20261010-WA0018', category: 'Folder 2 - Seru-seruan & Outbound',
+        thumbUrl: 'https://images.unsplash.com/photo-1530866495561-507c9faab2ed?auto=format&fit=crop&w=800&h=1000&q=80',
         demoVideoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4',
         videoEmbedUrl: '',
         driveUrl: '#'
       },
       {
-        id: 'm3', type: 'image', rawTitle: 'DSC09821', category: 'Folder 3 - Malam BBQ',
-        thumbUrl: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&h=650&q=80',
-        fullUrl: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1400&q=80',
+        id: 'gps3', type: 'image', rawTitle: 'DSC09821', category: 'Folder 3 - Kebun Teh & Healing',
+        thumbUrl: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&h=650&q=80',
+        fullUrl: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=80',
         driveUrl: '#'
       },
       {
-        id: 'm4', type: 'image', rawTitle: 'WhatsApp Image 2026-10-11 at 14.22.10', category: 'Folder 4 - Kamera HP Teman',
-        thumbUrl: 'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=800&h=950&q=80',
-        fullUrl: 'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1400&q=80',
+        id: 'gps4', type: 'image', rawTitle: 'WhatsApp Image 2026-10-11', category: 'Folder 4 - Candid Anak GPS',
+        thumbUrl: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&h=950&q=80',
+        fullUrl: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1400&q=80',
         driveUrl: '#'
       },
       {
-        id: 'm5', type: 'video', rawTitle: 'PXL_20261010_2115092', category: 'Folder 3 - Malam BBQ',
+        id: 'gps5', type: 'video', rawTitle: 'PXL_20261010_2115092', category: 'Folder 5 - Malam Keakraban',
         thumbUrl: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=800&h=900&q=80',
         demoVideoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
         videoEmbedUrl: '',
         driveUrl: '#'
       },
       {
-        id: 'm6', type: 'image', rawTitle: 'IMG_8821', category: 'Folder 5 - Panitia & Dokumentasi',
+        id: 'gps6', type: 'image', rawTitle: 'IMG_8821', category: 'Folder 5 - Malam Keakraban',
         thumbUrl: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=800&h=750&q=80',
         fullUrl: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1400&q=80',
         driveUrl: '#'
       },
       {
-        id: 'm7', type: 'image', rawTitle: 'DSC09912', category: 'Folder 2 - Outbound Seru',
+        id: 'gps7', type: 'image', rawTitle: 'DSC09912', category: 'Folder 2 - Seru-seruan & Outbound',
         thumbUrl: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&h=600&q=80',
         fullUrl: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1400&q=80',
         driveUrl: '#'
       },
       {
-        id: 'm8', type: 'image', rawTitle: '20261011_130045', category: 'Folder 4 - Kamera HP Teman',
+        id: 'gps8', type: 'image', rawTitle: '20261011_130045', category: 'Folder 4 - Candid Anak GPS',
         thumbUrl: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=800&h=700&q=80',
         fullUrl: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1400&q=80',
         driveUrl: '#'
@@ -317,11 +369,32 @@
     let currentMediaType = 'ALL';
     let isScrapbook = true;
     let showCaptions = true;
-    let visibleCount = 20; // Jumlah foto yang dimuat per halaman agar ringan
+    let visibleCount = 20;
     const ITEMS_PER_LOAD = 20;
     let currentLightboxIndex = 0;
 
-    // Fungsi Mengacak Array (Fisher-Yates Shuffle)
+    // Data Reaksi di LocalStorage
+    let reactions = JSON.parse(localStorage.getItem('gps_batch2_reactions')) || {
+      gps1: { laugh: 4, fire: 12, love: 6 },
+      gps2: { laugh: 18, fire: 15, love: 5 },
+      gps3: { laugh: 2, fire: 9, love: 11 },
+      gps4: { laugh: 21, fire: 7, love: 3 },
+      gps5: { laugh: 9, fire: 16, love: 8 },
+      gps6: { laugh: 3, fire: 8, love: 9 },
+      gps7: { laugh: 11, fire: 14, love: 4 },
+      gps8: { laugh: 15, fire: 6, love: 5 }
+    };
+
+    function getReaction(id) {
+      if (!reactions[id]) reactions[id] = { laugh: 0, fire: 0, love: 0 };
+      return reactions[id];
+    }
+
+    function getTotalPhotoReactions(id) {
+      const r = getReaction(id);
+      return r.laugh + r.fire + r.love;
+    }
+
     function shuffleArray(arr) {
       for (let i = arr.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -344,7 +417,6 @@
         }
       }
 
-      // Pasang Smart Caption ke setiap item & Acak urutannya otomatis!
       allMedia = shuffleArray(rawList.map((item, idx) => ({
         ...item,
         smartTitle: generateSmartCaption(item, idx)
@@ -359,8 +431,13 @@
 
     function updateMediaCounts() {
       document.getElementById('countAll').textContent = allMedia.length;
+      document.getElementById('statTotalMedia').textContent = allMedia.length;
       document.getElementById('countImg').textContent = allMedia.filter(m => m.type === 'image').length;
       document.getElementById('countVid').textContent = allMedia.filter(m => m.type === 'video').length;
+
+      let totalReact = 0;
+      allMedia.forEach(m => { totalReact += getTotalPhotoReactions(m.id); });
+      document.getElementById('statTotalReaksi').textContent = totalReact;
     }
 
     function shuffleGallery() {
@@ -377,7 +454,7 @@
       });
       const activeBtn = document.getElementById(`type-${type}`);
       if (activeBtn) {
-        activeBtn.className = 'type-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-amber-400 text-slate-950 transition shadow';
+        activeBtn.className = 'type-btn px-3.5 py-1.5 rounded-lg text-xs font-bold bg-emerald-400 text-slate-950 transition shadow';
       }
       renderGallery();
     }
@@ -389,6 +466,9 @@
       container.innerHTML = `
         <button onclick="filterCategory('ALL')" id="cat-ALL" class="cat-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white/20 text-white transition whitespace-nowrap">
           Semua Folder
+        </button>
+        <button onclick="filterCategory('POPULAR')" id="cat-POPULAR" class="cat-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 text-amber-300 transition whitespace-nowrap">
+          🔥 Paling Ramai Reaksi
         </button>
       `;
 
@@ -442,10 +522,14 @@
       const loadMoreContainer = document.getElementById('loadMoreContainer');
 
       filteredMedia = allMedia.filter(m => {
-        const matchCat = currentCategory === 'ALL' || m.category === currentCategory;
+        const matchCat = (currentCategory === 'ALL' || currentCategory === 'POPULAR') ? true : m.category === currentCategory;
         const matchType = currentMediaType === 'ALL' || m.type === currentMediaType;
         return matchCat && matchType;
       });
+
+      if (currentCategory === 'POPULAR') {
+        filteredMedia.sort((a, b) => getTotalPhotoReactions(b.id) - getTotalPhotoReactions(a.id));
+      }
 
       if (filteredMedia.length === 0) {
         gallery.innerHTML = '';
@@ -456,7 +540,6 @@
 
       emptyState.classList.add('hidden');
 
-      // Potong sesuai jumlah visibleCount supaya tidak berat
       const itemsToShow = filteredMedia.slice(0, visibleCount);
       const remaining = filteredMedia.length - itemsToShow.length;
 
@@ -468,18 +551,18 @@
       }
 
       const tapeColors = [
-        'rgba(251, 191, 36, 0.85)',
-        'rgba(244, 63, 94, 0.8)',
-        'rgba(56, 189, 248, 0.8)',
-        'rgba(52, 211, 153, 0.8)'
+        'rgba(52, 211, 153, 0.85)', // Emerald
+        'rgba(251, 191, 36, 0.85)', // Amber
+        'rgba(244, 63, 94, 0.8)',   // Rose
+        'rgba(56, 189, 248, 0.8)'   // Sky
       ];
 
       gallery.innerHTML = itemsToShow.map((item, index) => {
         const isVideo = item.type === 'video';
+        const r = getReaction(item.id);
         const tapeColor = tapeColors[index % tapeColors.length];
         const rotateClass = index % 2 === 0 ? 'rotate-[0.7deg] hover:rotate-0' : '-rotate-[0.7deg] hover:rotate-0';
 
-        // Indikator Tombol Play di Tengah jika file adalah Video
         const videoOverlay = isVideo ? `
           <div class="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/10 transition">
             <div class="w-14 h-14 rounded-full bg-amber-400/95 text-slate-950 flex items-center justify-center shadow-2xl scale-95 group-hover:scale-110 transition">
@@ -493,35 +576,58 @@
 
         if (isScrapbook) {
           return `
-            <div class="masonry-item relative pt-2" onclick="openLightbox(${index}, false)">
+            <div class="masonry-item relative pt-2">
               <div class="washi-tape rounded-sm" style="background: ${tapeColor};"></div>
-              <div class="cursor-pointer bg-stone-100 text-stone-800 p-3 ${showCaptions ? 'pb-4' : 'pb-3'} rounded-xl shadow-xl transition-all duration-300 hover:scale-[1.02] ${rotateClass}">
-                <div class="overflow-hidden rounded-lg relative group bg-stone-200">
+              <div class="bg-stone-100 text-stone-800 p-3 pb-4 rounded-xl shadow-xl transition-all duration-300 hover:scale-[1.02] ${rotateClass}">
+                <div onclick="openLightbox(${index}, false)" class="cursor-pointer overflow-hidden rounded-lg relative group bg-stone-200">
                   <img src="${item.thumbUrl}" alt="Moment" loading="lazy" class="w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                   ${videoOverlay}
-                  <span class="absolute bottom-2 left-2 text-[10px] font-semibold bg-black/65 text-slate-200 px-2 py-0.5 rounded backdrop-blur-sm">
+                  <span class="absolute bottom-2 left-2 text-[10px] font-semibold bg-black/70 text-emerald-300 px-2 py-0.5 rounded backdrop-blur-sm">
                     ${item.category}
                   </span>
                 </div>
                 ${showCaptions ? `
-                  <div class="mt-3 px-1 text-center">
-                    <p class="font-handwriting text-2xl text-stone-900 leading-tight">
+                  <div onclick="openLightbox(${index}, false)" class="cursor-pointer mt-3 px-1 text-center">
+                    <p class="font-handwriting text-2xl text-stone-900 leading-tight hover:text-emerald-700 transition">
                       "${item.smartTitle}"
                     </p>
                   </div>
                 ` : ''}
+                <!-- Tombol Reaksi Emoji -->
+                <div class="flex items-center justify-between mt-3 pt-2 border-t border-stone-200/80 text-xs">
+                  <div class="flex items-center gap-1.5">
+                    <button onclick="addReaction('${item.id}', 'laugh')" class="px-2 py-1 rounded-full bg-stone-200/80 hover:bg-amber-200 transition flex items-center gap-1">
+                      🤣 <span class="font-bold text-stone-700">${r.laugh}</span>
+                    </button>
+                    <button onclick="addReaction('${item.id}', 'fire')" class="px-2 py-1 rounded-full bg-stone-200/80 hover:bg-rose-200 transition flex items-center gap-1">
+                      🔥 <span class="font-bold text-stone-700">${r.fire}</span>
+                    </button>
+                    <button onclick="addReaction('${item.id}', 'love')" class="px-2 py-1 rounded-full bg-stone-200/80 hover:bg-pink-200 transition flex items-center gap-1">
+                      ❤️ <span class="font-bold text-stone-700">${r.love}</span>
+                    </button>
+                  </div>
+                  <button onclick="openLightbox(${index}, false)" class="text-[11px] font-bold text-stone-500 hover:text-stone-900">
+                    Buka ↗
+                  </button>
+                </div>
               </div>
             </div>
           `;
         } else {
-          // Mode Grid Modern Tanpa Bingkai Putih
           return `
-            <div onclick="openLightbox(${index}, false)" class="masonry-item group relative cursor-pointer overflow-hidden rounded-2xl bg-white/5 border border-white/10 shadow-lg">
-              <img src="${item.thumbUrl}" alt="Moment" loading="lazy" class="w-full object-cover transition-transform duration-500 group-hover:scale-105" />
-              ${videoOverlay}
-              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                <span class="text-[10px] font-bold text-amber-300">${item.category}</span>
-                ${showCaptions ? `<p class="text-white font-semibold text-sm mt-0.5">${item.smartTitle}</p>` : ''}
+            <div class="masonry-item group relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 shadow-lg">
+              <div onclick="openLightbox(${index}, false)" class="cursor-pointer relative">
+                <img src="${item.thumbUrl}" alt="Moment" loading="lazy" class="w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                ${videoOverlay}
+              </div>
+              <div class="p-3.5">
+                <span class="text-[10px] font-bold text-emerald-300">${item.category}</span>
+                ${showCaptions ? `<p onclick="openLightbox(${index}, false)" class="cursor-pointer text-white font-semibold text-sm mt-1">${item.smartTitle}</p>` : ''}
+                <div class="flex items-center gap-2 mt-3 pt-2 border-t border-white/10 text-xs">
+                  <button onclick="addReaction('${item.id}', 'laugh')" class="px-2.5 py-1 rounded-full bg-white/5 hover:bg-white/15 transition">🤣 ${r.laugh}</button>
+                  <button onclick="addReaction('${item.id}', 'fire')" class="px-2.5 py-1 rounded-full bg-white/5 hover:bg-white/15 transition">🔥 ${r.fire}</button>
+                  <button onclick="addReaction('${item.id}', 'love')" class="px-2.5 py-1 rounded-full bg-white/5 hover:bg-white/15 transition">❤️ ${r.love}</button>
+                </div>
               </div>
             </div>
           `;
@@ -529,14 +635,37 @@
       }).join('');
     }
 
-    // Fitur Gacha Momen Acak
+    function addReaction(id, type) {
+      const r = getReaction(id);
+      r[type] += 1;
+      localStorage.setItem('gps_batch2_reactions', JSON.stringify(reactions));
+      updateMediaCounts();
+      renderGallery();
+      if (!document.getElementById('lightbox').classList.contains('hidden')) {
+        updateLightboxReactionUI();
+      }
+    }
+
+    function reactCurrentMedia(type) {
+      const item = filteredMedia[currentLightboxIndex];
+      if (item) addReaction(item.id, type);
+    }
+
+    function updateLightboxReactionUI() {
+      const item = filteredMedia[currentLightboxIndex];
+      if (!item) return;
+      const r = getReaction(item.id);
+      document.getElementById('lbReactLaugh').textContent = r.laugh;
+      document.getElementById('lbReactFire').textContent = r.fire;
+      document.getElementById('lbReactLove').textContent = r.love;
+    }
+
     function gachaRandomMedia() {
       if (filteredMedia.length === 0) return;
       const randomIndex = Math.floor(Math.random() * filteredMedia.length);
       openLightbox(randomIndex, true);
     }
 
-    // Lightbox: Otomatis Putar Video atau Tampilkan Foto HD
     function openLightbox(index, isGacha = false) {
       currentLightboxIndex = index;
       const item = filteredMedia[index];
@@ -545,26 +674,25 @@
       const container = document.getElementById('lightboxMediaContainer');
       
       if (item.type === 'video') {
-        // Jika menggunakan video contoh (Preview), putar dengan HTML5 Video
         if (item.demoVideoUrl) {
           container.innerHTML = `
-            <video src="${item.demoVideoUrl}" controls autoplay class="max-h-[68vh] max-w-full rounded-2xl shadow-2xl border border-white/15 bg-black"></video>
+            <video src="${item.demoVideoUrl}" controls autoplay class="max-h-[62vh] max-w-full rounded-2xl shadow-2xl border border-white/15 bg-black"></video>
           `;
         } else {
-          // Jika dari Google Drive asli, gunakan Google Drive Video Embed Player (Anti Blokir CORS)
           container.innerHTML = `
             <iframe src="${item.videoEmbedUrl}" allow="autoplay; fullscreen" class="w-full max-w-3xl aspect-video rounded-2xl shadow-2xl border border-white/15 bg-black"></iframe>
           `;
         }
       } else {
         container.innerHTML = `
-          <img src="${item.fullUrl}" alt="Zoomed" class="max-h-[70vh] max-w-full rounded-xl shadow-2xl object-contain" />
+          <img src="${item.fullUrl}" alt="Zoomed" class="max-h-[65vh] max-w-full rounded-xl shadow-2xl object-contain" />
         `;
       }
 
       document.getElementById('lightboxTitle').textContent = item.smartTitle;
       document.getElementById('lightboxCat').textContent = item.category;
       document.getElementById('lightboxLink').href = item.driveUrl;
+      updateLightboxReactionUI();
       
       const badge = document.getElementById('lightboxBadge');
       if (isGacha) badge.classList.remove('hidden');
@@ -585,8 +713,25 @@
       const lb = document.getElementById('lightbox');
       lb.classList.add('hidden');
       lb.classList.remove('flex');
-      // Hentikan pemutaran video saat popup ditutup
       document.getElementById('lightboxMediaContainer').innerHTML = '';
+    }
+
+    function toggleMusic() {
+      const audio = document.getElementById('bgMusic');
+      const vinyl = document.getElementById('vinylDisc');
+      const text = document.getElementById('musicStatusText');
+
+      if (audio.paused) {
+        audio.play();
+        vinyl.classList.add('spin-vinyl');
+        text.textContent = 'Musik Menyala 🎶';
+        text.className = 'text-xs font-bold text-emerald-400';
+      } else {
+        audio.pause();
+        vinyl.classList.remove('spin-vinyl');
+        text.textContent = 'Putar Backsound 🎵';
+        text.className = 'text-xs font-bold text-white';
+      }
     }
 
     document.addEventListener('keydown', (e) => {
